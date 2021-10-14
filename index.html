@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>데스커</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- header -->
-    <header class="headerbar">
+    <header id="headerbar">
         <div class="header__logo">
             <img src="imgs/logo.png" alt="logo">
         </div>
@@ -20,10 +22,11 @@
     </header>
 
     <!-- navbar -->
-    <nav class="navbar">
+    <nav id="navbar">
+        <div class="navbar__main">
         <ul class="navbar__menu">
             <li class="navbar__menu__item"><a herf="#">PRODUCTS</a></li>
-            <ul>
+            <ul class="navbar__submenu">
                 <li><a href="#">DEKERS</a></li>
                 <li><a href="#">TABLES</a></li>
                 <li><a href="#">SHELVES</a></li>
@@ -34,14 +37,14 @@
                 <li><a href="#">CHAIRS</a></li>
             </ul>
             <li class="navbar__menu__item"><a herf="#">ABOUT</a></li>
-            <ul>
+            <ul class="navbar__submenu">
                 <li><a href="#">STORY</a></li>
                 <li><a href="#">DESIGN</a></li>
                 <li><a href="#">SIGNATURE STORE</a></li>
                 <li><a href="#">PLANNING STORE</a></li> 
             </ul>
             <li class="navbar__menu__item"><a herf="#">DESKER NOW</a></li>
-            <ul>
+            <ul class="navbar__submenu">
                 <li><a href="#">월간데스커</a></li>
                 <li><a href="#">오피스체인지</a></li>
                 <li><a href="#">소셜미디어</a></li>
@@ -49,15 +52,20 @@
                 <li><a href="#">DESKERxDESKERS</a></li>
             </ul>
             <li class="navbar__menu__item"><a herf="#">LOCATION</a></li>
-            <li class="navbar__menu__item"><a herf="#">SUPPORT</a>
-                <ul>
+            <li class="navbar__menu__item"><a herf="#">SUPPORT</a></li>
+            <ul class="navbar__submenu">
                     <li><a href="#">Q&A</a></li>
                     <li><a href="#">A/S</a></li>
                     <li><a href="#">FAQ</a></li>
                     <li><a href="#">USER GUIDE</a></li>  
-                </ul></li>
+                </ul>
             <li class="navbar__menu__item"><a herf="#">기업고객</a></li>
-        </li>
+        </div>
+            <div class="navbar__cart">
+                <button class="navbar_cart__btn">
+                    <img src="imgs/btn_cart.png">
+                </button>
+            </div>
     </nav>
 </body>
 </html>

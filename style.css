@@ -1,0 +1,100 @@
+:root {
+  /* Color */
+  --color-white: #ffffff;
+  --color-light-white: #eeeeee;
+  --color-dark-white: #bdbdbd;
+  --color-pink: #fe918d;
+  --color-dark-pink: #ff6863;
+  --color-dark-grey: #4d4d4d;
+  --color-grey: #616161;
+  --color-light-grey: #7c7979;
+  --color-blue: #73aace;
+  --color-yellow: #fff7d1;
+  --color-orange: #feb546;
+  --color-black: #000000;
+  --color-ivory: #fffcf7;
+
+  /* Font size */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+
+  /* Size */
+  --size-border-radius: 4px;
+
+  /* Animation */
+  --animation-duration: 300ms;
+}
+
+/* Universal tags */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: "Open Sans", sans-serif;
+  cursor: default;
+  background-color: var(--color-ivory);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+#headerbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 32px;
+}
+
+.header__logo img {
+  width: 170px;
+  padding: 10px;
+}
+
+.haeder__menu a {
+  padding-right: 30px;
+  font-size: 12px;
+  color: var(--color-dark-grey);
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar__menu {
+  display: flex;
+  font-size: 13px;
+  margin-top: 0;
+}
+
+.navbar__menu__item {
+  padding-right: 85px;
+}
+
+.navbar__submenu {
+  display: none;
+}
+
+.navbar__cart img {
+  width: 23px;
+  margin-right: 80px;
+}
