@@ -14,56 +14,64 @@
         <div class="header__logo">
             <img src="imgs/logo.png" alt="logo">
         </div>
-        <div class="haeder__menu">
-            <a href="#">로그인</a>
-            <a href="#">회원가입</a>
-            <a href="#">검색</a>
-        </div>
+        <ul class="header__menu">
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">검색</a></li>
+        </ul>
     </header>
 
     <!-- navbar -->
     <nav id="navbar">
-        <div class="navbar__main">
         <ul class="navbar__menu">
-            <li class="navbar__menu__item"><a herf="#">PRODUCTS</a></li>
-            <ul class="navbar__submenu">
-                <li><a href="#">DEKERS</a></li>
-                <li><a href="#">TABLES</a></li>
-                <li><a href="#">SHELVES</a></li>
-                <li><a href="#">SCREENS</a></li>
-                <li><a href="#">STORAGES</a></li>
-                <li><a href="#">WORKTOOLS</a></li>
-                <li><a href="#">ACCESSORIES</a></li>
-                <li><a href="#">CHAIRS</a></li>
-            </ul>
-            <li class="navbar__menu__item"><a herf="#">ABOUT</a></li>
-            <ul class="navbar__submenu">
-                <li><a href="#">STORY</a></li>
-                <li><a href="#">DESIGN</a></li>
-                <li><a href="#">SIGNATURE STORE</a></li>
-                <li><a href="#">PLANNING STORE</a></li> 
-            </ul>
-            <li class="navbar__menu__item"><a herf="#">DESKER NOW</a></li>
-            <ul class="navbar__submenu">
-                <li><a href="#">월간데스커</a></li>
-                <li><a href="#">오피스체인지</a></li>
-                <li><a href="#">소셜미디어</a></li>
-                <li><a href="#">뉴스</a></li>
-                <li><a href="#">DESKERxDESKERS</a></li>
-            </ul>
-            <li class="navbar__menu__item"><a herf="#">LOCATION</a></li>
-            <li class="navbar__menu__item"><a herf="#">SUPPORT</a></li>
-            <ul class="navbar__submenu">
-                    <li><a href="#">Q&A</a></li>
-                    <li><a href="#">A/S</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">USER GUIDE</a></li>  
+            <li>
+                <a href="#">PRODUCTS</a>
+                <ul class="navbar__submenu">
+                    <li><a href="#">DESKS</a></li>
+                    <li><a href="">TABLES</a></li>
+                    <li><a href="">SHELVES</a></li>
+                    <li><a href="">SCREENS</a></li>
+                    <li><a href="">STORAGES</a></li>
+                    <li><a href="">WORKTOOLS</a></li>
+                    <li><a href="">ACCESSORIES</a></li>
+                    <li><a href="">CHAIRS</a></li>
                 </ul>
-            <li class="navbar__menu__item"><a herf="#">기업고객</a></li>
-        </div>
+            </li>
+            <li>
+                <a href="#">ABOUT</a>
+                <ul class="navbar__submenu">
+                    <li><a href="">STORY</a></li>
+                    <li><a href="">DESIGN STORE</a></li>
+                    <li><a href="">SIGNATURE STORE</a></li>
+                    <li><a href="">PLANNING STORE</a></li>
+                </ul>   
+            </li>
+            <li>
+                <a href="#">DESKER NOW</a>
+                <ul class="navbar__submenu">
+                    <li><a href="">월간데스커</a></li>
+                    <li><a href="">오피스체인지</a></li>
+                    <li><a href="">소셜미디어</a></li>
+                    <li><a href="">뉴스</a></li>
+                    <li><a href="">DESKERxDESKERS</a></li>
+                </ul>
+            </li>
+            <li><a href="#">LOCATION</a></li>
+            <li>
+                <a href="#">SUPPORT</a>
+                <ul class="navbar__submenu">
+                    <li><a href="">Q&A</a></li>
+                    <li><a href="">A/S</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">USER GUIDE</a></li>
+                </ul>
+            </li>
+            <li><a href="#">기업고객</a></li>
+        </ul>
             <div class="navbar__cart">
                 <button class="navbar_cart__btn">
-                    <img src="imgs/btn_cart.png">
+                    <img class="cart_img" src="imgs/btn_cart.png" alt="cart_btn">
+                    <span id="cartCnt">(0)</span>
                 </button>
             </div>
     </nav>
