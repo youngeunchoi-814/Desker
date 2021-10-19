@@ -37,6 +37,7 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   margin: 0 auto;
   font-family: "Open Sans", sans-serif;
@@ -52,6 +53,7 @@ a {
 ul,
 li {
   list-style: none;
+  padding-left: 0px;
 }
 
 button {
@@ -214,4 +216,94 @@ button {
 
 .slick-active > button {
   background-color: var(--color-black);
+}
+
+/* footer */
+.footer__main {
+  display: flex;
+  border-top: 1px solid #7a7673;
+}
+
+.footer__menu {
+  margin: 40px 0px 0px 80px;
+}
+
+.footer__menu > dt {
+  font-size: 12px;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+.footer__menu > dd {
+  font-size: 12px;
+  padding-top: 10px;
+  margin: 0;
+}
+
+.footer__menu > dd > a {
+  color: var(--color-light-grey);
+}
+
+.footer__menu > ul {
+  margin: 0px;
+  color: var(--color-light-grey);
+}
+
+.footer__menu .pc_chatIcon {
+  width: 18px;
+  height: 18px;
+}
+
+.footer__menu .chat {
+  margin: 0 auto;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+}
+.footer__menu ul {
+  margin: 0px;
+}
+.footer__menu li:nth-child(1) {
+  padding-bottom: 20px;
+}
+
+.footer__menu li:nth-child(2) {
+  padding-bottom: 20px;
+}
+
+.footer__menu li:nth-child(3) {
+  padding-bottom: 8px;
+}
+
+.footer__menu li:nth-child(4) {
+  padding-bottom: 8px;
+}
+
+.footer__menu li:nth-child(5) {
+  padding-bottom: 18px;
+}
+
+.footer__menu .sns {
+  display: flex;
+  padding-left: 0px;
+}
+
+.footer__menu .sns > li > a > img {
+  padding-right: 8px;
+  margin-right: 8px;
+}
+
+.footer__menu .sns > li:first-child > a > img {
+  width: 25px;
+}
+.footer__menu .sns > li:nth-child(2) > a > img {
+  width: 18px;
+}
+
+.footer__menu .sns > li:nth-child(3) > a > img {
+  width: 22px;
+}
+
+.footer__menu .sns > li:nth-child(4) > a > img {
+  width: 30px;
 }
