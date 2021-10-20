@@ -115,7 +115,6 @@ button {
   height: 280px;
   padding: 0;
   background-color: var(--color-white);
-  z-index: 9999;
 }
 
 .navbar__submenu > li {
@@ -155,7 +154,10 @@ button {
   top: -3px;
 }
 
-/* Main Slider */
+/* banner */
+.banner {
+  margin-bottom: 130px;
+}
 .mainSlider {
   max-width: 1600px;
   width: 100%;
@@ -220,11 +222,83 @@ button {
   background-color: var(--color-black);
 }
 
+/* Desker Now */
+.now {
+  width: 80%;
+  margin-left: 10%;
+}
+.now__top {
+  display: flex;
+  justify-content: space-between;
+}
+.now__title {
+  font-weight: 600;
+  padding-top: 12px;
+  letter-spacing: 0.8px;
+}
+.now__subtitle {
+  display: flex;
+}
+
+.now__subtitle li {
+  padding-right: 10px;
+}
+
+.now__subtitle a:hover {
+  color: black;
+  border-bottom: 3px solid #000;
+  transition: all 0.1s ease-out;
+}
+
+.now__subtitle a {
+  font-size: 12px;
+}
+
+.now__subtitle img {
+  padding-right: 10px;
+  position: relative;
+  top: -3px;
+}
+
+/* Desker now grid */
+.grid {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 10px;
+  padding-left: 45px;
+}
+
+.grid__col {
+  padding-right: 50px;
+}
+
+.grid__item img {
+  width: 370px;
+}
+
+.grid__text {
+  margin: 25px 0px 70px 0px;
+}
+.grid__item span {
+  display: block;
+  font-size: 18px;
+}
+
+.grid__item p {
+  font-size: 13px;
+  color: var(--color-light-grey);
+}
+
 /* footer */
 .footer__top {
   display: flex;
   border-top: 1px solid #7a7673;
   margin-bottom: 50px;
+}
+
+.footer__menu > dt > a:hover,
+.footer__menu > dd > a:hover {
+  color: #ee303c;
 }
 
 .footer__menu {
@@ -258,6 +332,7 @@ button {
 }
 
 .footer__menu .chat {
+  cursor: pointer;
   position: relative;
   top: -4px;
   font-weight: bold;
