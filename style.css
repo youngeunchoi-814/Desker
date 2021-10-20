@@ -151,6 +151,8 @@ button {
 
 .navbar__cart #cartCnt {
   font-size: 15px;
+  position: relative;
+  top: -3px;
 }
 
 /* Main Slider */
@@ -219,13 +221,15 @@ button {
 }
 
 /* footer */
-.footer__main {
+.footer__top {
   display: flex;
   border-top: 1px solid #7a7673;
+  margin-bottom: 50px;
 }
 
 .footer__menu {
-  margin: 40px 0px 0px 80px;
+  margin-top: 40px;
+  margin-left: 80px;
 }
 
 .footer__menu > dt {
@@ -251,14 +255,13 @@ button {
 
 .footer__menu .pc_chatIcon {
   width: 18px;
-  height: 18px;
 }
 
 .footer__menu .chat {
-  margin: 0 auto;
-  width: 18px;
-  height: 18px;
-  line-height: 18px;
+  position: relative;
+  top: -4px;
+  font-weight: bold;
+  padding-left: 3px;
 }
 .footer__menu ul {
   margin: 0px;
@@ -297,7 +300,7 @@ button {
   width: 25px;
 }
 .footer__menu .sns > li:nth-child(2) > a > img {
-  width: 18px;
+  width: 15px;
 }
 
 .footer__menu .sns > li:nth-child(3) > a > img {
@@ -306,4 +309,55 @@ button {
 
 .footer__menu .sns > li:nth-child(4) > a > img {
   width: 30px;
+}
+
+.dash {
+  background: url("/imgs/dash.png") repeat-x;
+  width: 87%;
+  height: 1px;
+  margin-left: 80px;
+}
+
+.footer_policy {
+  display: flex;
+  font-size: 12px;
+  margin-left: 80px;
+  color: var(--color-light-grey);
+}
+
+.policy_pc > li {
+  line-height: 180%;
+  margin-bottom: 17px;
+}
+
+.policy_pc > li:first-child {
+  padding-top: 20px;
+}
+
+.footer_policy a {
+  color: var(--color-light-grey);
+}
+
+.crt {
+  position: relative;
+  top: 50px;
+  left: 25%;
+}
+
+.crt > li {
+  padding: 10px 0 0 10px;
+}
+
+.crt > li:nth-child(2) {
+  font-weight: 700;
+}
+
+.spc img {
+  width: 23px;
+}
+
+.btn_up img {
+  width: 38px;
+  margin-top: 25px;
+  margin-left: 50px;
 }
