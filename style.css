@@ -326,6 +326,53 @@ button {
   background: url("/imgs/seeMoreStory_red.png") no-repeat center / 95%;
 }
 
+/*  brand story */
+.brend_story {
+  position: relative;
+  width: 100%;
+  height: 720px;
+  overflow: hidden;
+}
+
+.video_bg {
+  height: 720px;
+  text-align: center;
+}
+
+.video_bg > video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+  visibility: visible;
+}
+
+.video_bg::after {
+  content: "";
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url("../imgs/exploreText.png") no-repeat center / 100%;
+  width: 360px;
+  height: 70px;
+  z-index: 10;
+}
+
+.video_bg::before {
+  content: "";
+  position: absolute;
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url("../imgs/exploreBtn.png") no-repeat center / 100%;
+  width: 146px;
+  height: 36px;
+  z-index: 10;
+}
+
 /* footer */
 .footer__top {
   display: flex;
