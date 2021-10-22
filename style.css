@@ -614,7 +614,7 @@ button {
   width: 23px;
 }
 
-.btn_up {
+.btn__up {
   position: relative;
   background-color: transparent;
   top: -500px;
@@ -622,7 +622,7 @@ button {
   cursor: pointer;
 }
 
-.btn_up img {
+.btn__up img {
   width: 40px;
 }
 

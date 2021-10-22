@@ -1,4 +1,4 @@
-$(".mainSlider").slick({
+$(".mainSlider").slick({//mainSlider
     slidesToShow: 1,
     slidesToScroll: 1,
     fade: true,
@@ -24,8 +24,13 @@ $(".mainSlider").slick({
         draggable : false
     });
 
-const arrowUp=document.querySelector('.btn_up');
-arrowUp.addEventListener('click',()=>{
-    arrowup.scrollIntoView('#navbar');
-    arrowUp.scrollIntoView({behavior: "smooth"});
-});
+    const arrowUp=document.querySelector('.btn__up');
+    arrowUp.addEventListener('click',()=>{
+        scrollIntoView('#navbar');
+    });
+    
+    function scrollIntoView(selector){
+        const scrollTo = document.querySelector(selector);
+        scrollTo.scrollIntoView({behavior: "smooth"});
+    }
+    
