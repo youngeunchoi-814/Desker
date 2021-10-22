@@ -13,6 +13,8 @@
   --color-orange: #feb546;
   --color-black: #000000;
   --color-ivory: #fffcf7;
+  --color-light-puple: #b39ddb;
+  --color-dark-puple: #a094b7;
 
   /* Font size */
   --font-large: 48px;
@@ -111,10 +113,12 @@ button {
 
 .navbar__submenu {
   display: none;
-  width: 100%;
+  position: absolute;
+  width: 130px;
   height: 280px;
   padding: 0;
   background-color: var(--color-white);
+  z-index: 9999;
 }
 
 .navbar__submenu > li {
@@ -170,7 +174,7 @@ button {
 
 .slick-slide img {
   width: 100%;
-  z-index: 1100;
+  z-index: 11000;
 }
 
 .slick-slide > a {
@@ -319,11 +323,11 @@ button {
   display: inline-block;
   width: 193px;
   height: 50px;
-  background: url("/imgs/seeMoreStory_bk.png") no-repeat center / 95%;
+  background: url("imgs/seeMoreStory_bk.png") no-repeat center / 95%;
 }
 
 .see_more > a:hover {
-  background: url("/imgs/seeMoreStory_red.png") no-repeat center / 95%;
+  background: url("imgs/seeMoreStory_red.png") no-repeat center / 95%;
 }
 
 /*  brand story */
@@ -355,7 +359,7 @@ button {
   top: 44%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url("../imgs/exploreText.png") no-repeat center / 100%;
+  background: url("imgs/exploreText.png") no-repeat center / 100%;
   width: 360px;
   height: 70px;
   z-index: 10;
@@ -367,31 +371,27 @@ button {
   top: 56%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url("../imgs/exploreBtn.png") no-repeat center / 100%;
+  background: url("imgs/exploreBtn.png") no-repeat center / 100%;
   width: 146px;
   height: 36px;
   z-index: 10;
 }
 /*  find your desk */
 .fyd {
-  width: 100%;
+  padding: 100px;
   background-color: var(--color-white);
-}
-.fyd__title__wrap {
-  margin-top: 50px;
 }
 
 .fyd_title {
   width: 80%;
-  margin-top: 10%;
-  margin-left: 10%;
+  margin-left: 7.5%;
   font-weight: 600;
   letter-spacing: 2.1px;
 }
 .desk {
-  width: 80%;
+  width: 90%;
   display: flex;
-  margin-left: 10%;
+  margin-left: 7.5%;
   padding-top: 20px;
   cursor: pointer;
 }
@@ -570,7 +570,7 @@ button {
 }
 
 .dash {
-  background: url("/imgs/dash.png") repeat-x;
+  background: url("imgs/dash.png") repeat-x;
   width: 87%;
   height: 1px;
   margin-left: 80px;
@@ -624,4 +624,47 @@ button {
 
 .btn_up img {
   width: 40px;
+}
+
+.bottom_blank {
+  height: 80px;
+}
+
+.banner_wrap > div {
+  display: inline-block;
+  line-height: 80px;
+}
+
+.banner_wrap > div > span {
+  font-size: 12px;
+  color: #231f20;
+  font-weight: 600;
+}
+
+.left {
+  margin-left: 160px;
+  float: left;
+}
+.left > img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.right {
+  margin-right: 160px;
+  float: right;
+}
+
+.bottom_banner {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  background: #ebe7e1;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.bottom_banner:hover {
+  background-color: #e3e3e3;
 }
